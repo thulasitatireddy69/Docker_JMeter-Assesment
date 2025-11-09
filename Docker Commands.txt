@@ -1,0 +1,10 @@
+
+
+docker pull justb4/jmeter:latest
+
+
+Main-docker run --rm -v "D:/apache-jmeter-5.6.3/JMeterTest/Docker_JMeter:/test" -w /test justb4/jmeter -n -t "Docker123456.jmx" -l results.jtl -e -o /test/Run6Endurance-100VU-60Min
+
+
+
+run localy-docker run -d --name httpbin_local -p 8080:80 kennethreitz/httpbin
